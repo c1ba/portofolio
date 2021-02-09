@@ -20,26 +20,26 @@ export default function BasicExample() {
       </div>
         <ul className="nav">
           <li>
-            <Link style={randomPos1} to="/projects">Projects</Link>
+            <Link style={randomPos1} to="/portofolio/projects">Projects</Link>
           </li>
           <li>
-            <Link style={randomPos2} to="/e_b">Educational Background</Link>
+            <Link style={randomPos2} to="/portofolio/e_b">Educational Background</Link>
           </li>
           <li>
-            <Link style={randomPos3} to="/about_me">About Me</Link>
+            <Link style={randomPos3} to="/portofolio/about_me">About Me</Link>
           </li>
         </ul>
 
         <hr />
 
         <Switch>
-          <Route path="/portofolio/projects">
+          <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/portofolio/e_b">
+          <Route path="/e_b">
             <EducationalBackground />
           </Route>
-          <Route path="/portofolio/about_me">
+          <Route path="/about_me">
             <AboutMe />
           </Route>
         </Switch>

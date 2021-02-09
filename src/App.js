@@ -28,6 +28,7 @@ export default function BasicExample() {
           <li>
             <Link style={randomPos3} to="/portofolio/about_me">About Me</Link>
           </li>
+          <Link className="background" to="/portofolio/"></Link>
         </ul>
 
         <hr />

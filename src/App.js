@@ -33,13 +33,13 @@ export default function BasicExample() {
         <hr />
 
         <Switch>
-          <Route path="/projects">
+          <Route path="/portofolio/projects">
             <Projects />
           </Route>
-          <Route path="/e_b">
+          <Route path="/portofolio/e_b">
             <EducationalBackground />
           </Route>
-          <Route path="/about_me">
+          <Route path="/portofolio/about_me">
             <AboutMe />
           </Route>
         </Switch>

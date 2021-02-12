@@ -29,6 +29,9 @@ export default function BasicExample() {
             <Link style={randomPos3} to="/portofolio/about_me">About Me</Link>
           </li>
           <Link className="background" to="/portofolio/"></Link>
+          <div style={contactCol}>
+            <h2>E-mail: costachealexandra28@gmail.com</h2>
+          </div>
         </ul>
 
         <hr />
@@ -50,6 +53,23 @@ export default function BasicExample() {
 }
 
 let randomPos1, randomPos2, randomPos3;
+const contactCol={
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'bottom',
+  alignItems: 'center',
+  width: '100%',
+  height: 'auto',
+  position: 'absolute',
+  bottom: '0'
+}
+
+const contact={
+  display: 'flex',
+  justifyContent: 'space-around',
+  width: '100%',
+  height: 'auto',
+}
 
 const openingText={
   textAlign: 'center', 
@@ -60,7 +80,7 @@ if(window.innerWidth >= 933){
 randomPos1={
   position: 'absolute',
   left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth - 650)),
-  top: Math.floor(Math.random() * Math.floor(window.innerHeight-100)),
+  top: Math.floor(Math.random() * Math.floor(window.innerHeight-200)),
   textDecoration: 'none',
   animation: 'trans 1s forwards'
 }
@@ -68,7 +88,7 @@ randomPos1={
 randomPos2={
   position: 'absolute',
   left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth - 700)),
-  top: Math.floor(Math.random() * Math.floor(window.innerHeight-100)),
+  top: Math.floor(Math.random() * Math.floor(window.innerHeight-200)),
   textDecoration: 'none',
   animation: 'trans 1s forwards'
 }
@@ -76,7 +96,7 @@ randomPos2={
 randomPos3={
   position: 'absolute',
   left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth - 700)),
-  top: Math.floor(Math.random() * Math.floor(window.innerHeight-100)),
+  top: Math.floor(Math.random() * Math.floor(window.innerHeight-200)),
   textDecoration: 'none',
   animation: 'trans 1s forwards'
 }

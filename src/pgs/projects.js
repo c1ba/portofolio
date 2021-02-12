@@ -5,7 +5,7 @@ export default class Projects extends Component {
     return (
         <div style={box} className="projects text_box">
         <div className="content">
-        <h2 style={linkText} onClick={()=>window.open("https://gifted-kepler-240173.netlify.app/", "_blank")}>Throw Trash Responsibly</h2>
+        <h2 style={linkText} onClick={()=>window.open("https://c1ba.github.io/throw_trash_responsibly/", "_blank")}>Throw Trash Responsibly</h2>
        <h2 style={linkText} onClick={()=>window.open("https://friendly-wescoff-c440fd.netlify.app/", "_blank")}>Color Scroller(Hex Code Based)</h2>
        <h2 style={linkText} onClick={()=>window.open("https://www.maskohomedesign.com", "_blank")}>Masko Home Design(Business Cancelled)</h2>
        <h2 style={linkText} onClick={()=>window.open("https://ciba.itch.io/apedyo", "_blank")}>APEDYO</h2>
@@ -22,7 +22,7 @@ const linkText={
     textDecoration: 'none',
     cursor: 'pointer',
     marginRight: '10px',
-    marginLeft: '10px'
+    marginLeft: '10px',
 }
 
 const box={

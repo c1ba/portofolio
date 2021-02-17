@@ -16,7 +16,7 @@ export default function BasicExample() {
     <Router>
       <div className="App">
       <div>
-        <h1 style={openingText} className="opening_div">COSTACHE IOANA BRANDUSA ALEXANDRA</h1>
+        <Link to="/portofolio/"><h1 style={openingText} className="opening_div">COSTACHE IOANA BRANDUSA ALEXANDRA</h1></Link>
       </div>
         <ul className="nav">
           <li>
@@ -29,10 +29,11 @@ export default function BasicExample() {
             <Link style={randomPos3} to="/portofolio/about_me">About Me</Link>
           </li>
           <Link className="background" to="/portofolio/"></Link>
-          <div style={contactCol}>
+        </ul>
+
+        <div style={contactCol}>
             <h2>E-mail: costachealexandra28@gmail.com</h2>
           </div>
-        </ul>
 
         <hr />
 

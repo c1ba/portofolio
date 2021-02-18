@@ -16,17 +16,17 @@ export default function BasicExample() {
     <Router>
       <div className="App">
       <div>
-        <Link to="/portofolio/"><h1 style={openingText} className="opening_div">COSTACHE IOANA BRANDUSA ALEXANDRA</h1></Link>
+        <Link to="/portofolio/"><div className="opening_div"><h1 style={openingText}>COSTACHE IOANA BRANDUSA ALEXANDRA</h1></div></Link>
       </div>
         <ul className="nav">
           <li>
-            <Link style={randomPos1} to="/portofolio/projects">Projects</Link>
+            <Link className="link_main" style={randomPos1} to="/portofolio/projects">Projects</Link>
           </li>
           <li>
-            <Link style={randomPos2} to="/portofolio/e_b">Educational Background</Link>
+            <Link className="link_main" style={randomPos2} to="/portofolio/e_b">Educational Background</Link>
           </li>
           <li>
-            <Link style={randomPos3} to="/portofolio/about_me">About Me</Link>
+            <Link className="link_main" style={randomPos3} to="/portofolio/about_me">About Me</Link>
           </li>
           <Link className="background" to="/portofolio/"></Link>
         </ul>

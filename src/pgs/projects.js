@@ -6,7 +6,8 @@ export default class Projects extends Component {
         <div style={box} className="projects text_box">
         <div className="content">
         <h2 style={linkText} className="link" onClick={()=>window.open("https://c1ba.github.io/throw_trash_responsibly/", "_blank")}>Throw Trash Responsibly</h2>
-       <h2 style={linkText} className="link" onClick={()=>window.open("https://friendly-wescoff-c440fd.netlify.app/", "_blank")}>Color Scroller(Hex Code Based)</h2>
+       <h2 style={linkText} className="link" onClick={()=>window.open("https://friendly-wescoff-c440fd.netlify.app/", "_blank")}>Color Scroller(Hex Code Based)(PC browser)</h2>
+       <h2 style={linkText} className="link" onClick={()=>window.open("https://c1ba.github.io/my_to_read/", "_blank")}>To Do List - Books Edition</h2>
        <h2 style={linkText} className="link" onClick={()=>window.open("https://www.maskohomedesign.com", "_blank")}>Masko Home Design(Business Cancelled)</h2>
        <h2 style={linkText} className="link" onClick={()=>window.open("https://ciba.itch.io/apedyo", "_blank")}>APEDYO</h2>
        <h2 style={linkText} className="link" onClick={()=>window.open("https://www.facebook.com/MiaKaraBucharest/photos/2562669244003454", "_blank")}>Mia Kara Poster</h2>

@@ -105,14 +105,19 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   @media screen and(max-width: 933px){
+    body, html {
+      overflow-y: scroll !important;
+    }
+
     .nav{
-      flex-direction: row !important;
+      flex-direction: row;
       justify-content: space-around !important;
       height: auto;
       width: 100%;
       z-index: 3;
       margin-top: 27px;
       background-color: #161c32;
+      margin-top: 50px !important;
 
       li{
         font-size: 20px;
@@ -142,7 +147,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     .text_box{
       width: 100% !important;
-      background-color: transparent !important;
     }
 
     .projects{
@@ -161,7 +165,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     }
 
     .content {
-      margin-top: 125px;
+      margin-top: 165px !important;
     }
   }
   
@@ -183,4 +187,18 @@ h1, h2, h3, h4, h5, h6, p, a {
     from{margin-left: -1000px; margin-right: 1000px;}
     to{margin-left: 0px; margin-right: 0px;}
   }
+
+  @media screen and (max-width: 388px){
+    .nav{
+      flex-direction: column !important;
+      li{
+        margin: 10px auto;
+      }
+    }
+
+    .content {
+      margin-top: 235px !important;
+    }
+  }
+
   

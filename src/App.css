@@ -122,11 +122,14 @@ hr {
 }
 
 @media screen and (max-width: 933px) {
+  body, html {
+    overflow-y: scroll !important;
+  }
   .nav {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-pack: distribute !important;
         justify-content: space-around !important;
     height: auto;
@@ -134,6 +137,7 @@ hr {
     z-index: 3;
     margin-top: 27px;
     background-color: #161c32;
+    margin-top: 50px !important;
   }
   .nav li {
     font-size: 20px;
@@ -157,7 +161,6 @@ hr {
   }
   .text_box {
     width: 100% !important;
-    background-color: transparent !important;
   }
   .projects h2 {
     font-size: 25px !important;
@@ -172,7 +175,7 @@ hr {
     margin-top: 63px !important;
   }
   .content {
-    margin-top: 125px;
+    margin-top: 165px !important;
   }
 }
 
@@ -211,6 +214,21 @@ hr {
   to {
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .nav {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .nav li {
+    margin: 10px auto;
+  }
+  .content {
+    margin-top: 235px !important;
   }
 }
 /*# sourceMappingURL=App.css.map */

@@ -41,7 +41,7 @@ export default class EducationalBackground extends Component {
   }
 }
 
-const box={
+let box={
     backgroundColor: '#161c32',
     width: '500px',
     height: '100%',
@@ -49,4 +49,17 @@ const box={
     position: 'absolute',
     zIndex: '2',
     animation: 'trans 1s forwards'
+}
+
+if(window.innerWidth <= 933){
+   box={
+    backgroundColor: '#161c32',
+    width: '500px',
+    height: '100%',
+    marginTop: '-18px',
+    position: 'absolute',
+    zIndex: '2',
+    animation: 'trans 1s forwards',
+    height: 'auto'
+   }
 }

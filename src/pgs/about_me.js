@@ -5,7 +5,7 @@ export default class AboutMe extends React.Component {
   render() {
     return (
         <div style={box} className="text_box">
-        <div className="content">
+        <div className="content" style={content}>
         <h3 style={textStyleFirstP}>First of all, I'll be honest: I don't like fancy words, so don't expect some formal language out of this description.</h3>
          <h3 style={textStyle}>I'm currently a student at a Computer Science Faculty and looking to make money out of my passion and fill this portofolio. 
            I've always seen programming as not just a method for antepreneurs to expand their businesses, but also a way to send a message to people.
@@ -37,7 +37,7 @@ const textStyle={
     marginRight: '20px'
 }
 
-const box={
+let box={
     width: '500px',
     height: '100%',
     marginTop: '-18px',
@@ -46,4 +46,22 @@ const box={
     backgroundImage: 'url('+bg+')',
     backgroundSize: 'cover',
     animation: 'trans 1s forwards'
+}
+
+if(window.innerWidth <= 933){
+  box={
+    width: '500px',
+    height: '100%',
+    marginTop: '-18px',
+    position: 'absolute',
+    zIndex: '2',
+    backgroundImage: 'url('+bg+')',
+    backgroundSize: 'cover',
+    animation: 'trans 1s forwards',
+   height: 'auto'
+  }
+}
+
+const content={
+  marginTop: '150px'
 }

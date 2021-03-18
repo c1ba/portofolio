@@ -72,9 +72,17 @@ const contact={
   height: 'auto',
 }
 
-const openingText={
+let openingText={
   textAlign: 'center', 
   fontWeight: '400'
+}
+
+if (window.innerWidth <= 388){
+  openingText={
+    textAlign: 'center', 
+    fontWeight: '400',
+    fontSize: '20px'
+  }
 }
 
 if(window.innerWidth >= 933){

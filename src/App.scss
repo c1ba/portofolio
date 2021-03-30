@@ -162,6 +162,13 @@ h1, h2, h3, h4, h5, h6, p, a {
   @media screen and (max-width: 659px){
     .nav{
       margin-top: 63px !important;
+      padding-bottom: 10px;
+      .link_main{
+        margin-top: 20px !important;
+        background-color: #e2e2e2;
+        color: #161c32 !important;
+        padding: 2px;
+      }
     }
 
     .content {
@@ -188,7 +195,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     to{margin-left: 0px; margin-right: 0px;}
   }
 
-  @media screen and (max-width: 388px){
+  @media screen and (max-width: 468px){
     .nav{
       flex-direction: column !important;
       li{

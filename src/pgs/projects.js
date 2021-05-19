@@ -10,7 +10,7 @@ export default class Projects extends Component {
        <h2 style={linkText} className="link" onClick={()=>window.open("https://c1ba.github.io/my_to_read/", "_blank")}>To Do List - Books Edition</h2>
        <h2 style={linkText} className="link" onClick={()=>window.open("https://www.maskohomedesign.com", "_blank")}>Masko Home Design(Business Cancelled)</h2>
        <h2 style={linkText} className="link" onClick={()=>window.open("https://ciba.itch.io/apedyo", "_blank")}>APEDYO</h2>
-       <h2 style={linkText} className="link" onClick={()=>window.open("https://www.facebook.com/MiaKaraBucharest/photos/2562669244003454", "_blank")}>Mia Kara Poster</h2>
+       <h2 style={linkText} className="link" onClick={()=>window.open("https://c1ba.github.io/quizhub_philosophy/", "_blank")}>What Philosphy Suits You Most Quiz (WIP)</h2>
         </div>
       </div>
     )

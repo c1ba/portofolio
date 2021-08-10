@@ -26,14 +26,11 @@ export default class EducationalBackground extends Component {
           <h5>Anticipated graduation: 2023</h5>
        </div>
        <div className="rubrica">
-        <h2>WORKING IN</h2>
+        <h2>MAIN SKILLS</h2>
         <h4>HTML/CSS</h4>
         <h4>JAVASCRIPT/JQUERY</h4>
-        <h4>C/C#/C++</h4>
-        <h4>PHP</h4>
-        <h4>MYSQL</h4>
+        <h4>C++</h4>
         <h4>PHOTOSHOP</h4>
-        <h4>ILLUSTRATOR</h4>
      </div>
     </div>
   </div>

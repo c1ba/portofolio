@@ -17,7 +17,7 @@ export default class AboutMe extends React.Component {
             I admired the artists and graphic designers that post their creation process on youtube and I tried it with the hope that I could do something of this career alone. 
             I've been using Photoshop for banners, and, recently, logos. 
             For UI concepts, I prefer to first draw the layout by hand and then, if I don't have an exact vision of the finished process, I use Figma to work the rest of the details.</h3>
-         <h3 style={textStyle}>In my free time I play video games, learn a little bit of phychology, philosophy or cardistry, and when I get the occasion to go outside, I do some amateur photography. If you're interested to collaborate with me, you have my e-mail.</h3>
+         <h3 style={textStyle}>In my free time I play video games, learn a little bit of psychology, cardistry or how to play guitar, but when I get the occasion to go outside, I enjoy taking photographs of everything that gets my eye. We can find beauty in everything.</h3>
         </div>
       </div>
     )

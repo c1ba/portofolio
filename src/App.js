@@ -9,6 +9,9 @@ import "./App.css";
 import AboutMe from "./pgs/about_me.js";
 import Projects from "./pgs/projects.js";
 import EducationalBackground from "./pgs/educational_background.js";
+import githubIcon from "./img/github_icon.png";
+import codewarsIcon from "./img/codewars_icon.png";
+import linkedInIcon from "./img/linkedin_icon.png";
 import "./bg.js";
 
 export default function BasicExample() {
@@ -32,8 +35,13 @@ export default function BasicExample() {
         </ul>
 
         <div style={contactCol}>
-            <h2>E-mail: costachealexandra28@gmail.com</h2>
-          </div>
+            <h2 style={{textAlign: 'center'}}>E-mail: costachealexandra28@gmail.com</h2>
+            <div style={contactRow}>
+              <img onClick={()=>window.open("https://www.codewars.com/users/Ciba", "_blank")} src={codewarsIcon} style={{width: '40px'},{height: '40px'}}></img>
+              <img onClick={()=>window.open("https://github.com/c1ba", "_blank")} src={githubIcon} style={{width: '40px'},{height: '40px'}}></img>
+              <img onClick={()=>window.open("https://www.linkedin.com/in/costache-i-b-alexandra/", "_blank")} src={linkedInIcon} style={{width: '40px'},{height: '40px'}}></img>
+            </div>
+        </div>
 
         <hr />
 
@@ -62,14 +70,15 @@ const contactCol={
   width: '100%',
   height: 'auto',
   position: 'absolute',
-  bottom: '0'
+  bottom: '0',
+  zIndex: '1'
 }
 
-const contact={
+const contactRow={
   display: 'flex',
+  flexDirection: 'row',
   justifyContent: 'space-around',
-  width: '100%',
-  height: 'auto',
+  width: '25%'
 }
 
 let openingText={
@@ -88,24 +97,24 @@ if (window.innerWidth <= 388){
 if(window.innerWidth >= 933){
 randomPos1={
   position: 'absolute',
-  left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth - 650)),
-  top: Math.floor(Math.random() * Math.floor(window.innerHeight-200)),
+  left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth -950)),
+  top: 250 + Math.floor(Math.random() * Math.floor(window.innerHeight-400)),
   textDecoration: 'none',
   animation: 'trans 1s forwards'
 }
 
 randomPos2={
   position: 'absolute',
-  left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth - 700)),
-  top: Math.floor(Math.random() * Math.floor(window.innerHeight-200)),
+  left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth - 1000)),
+  top: 300 + Math.floor(Math.random() * Math.floor(window.innerHeight-400)),
   textDecoration: 'none',
   animation: 'trans 1s forwards'
 }
 
 randomPos3={
   position: 'absolute',
-  left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth - 700)),
-  top: Math.floor(Math.random() * Math.floor(window.innerHeight-200)),
+  left: 500 + Math.floor(Math.random() * Math.floor(window.innerWidth - 1000)),
+  top: 250 + Math.floor(Math.random() * Math.floor(window.innerHeight-400)),
   textDecoration: 'none',
   animation: 'trans 1s forwards'
 }
@@ -124,7 +133,5 @@ else{
     textDecoration: 'none'
   }
 }
-
-console.log(randomPos1.top);
 
 

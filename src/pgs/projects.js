@@ -1,41 +1,27 @@
 import React, { Component } from 'react'
+import { defaultSideBarStyling } from '../common/cssProperties'
+import { LinkText } from '../components/LinkText'
+
+const links = [{text: "Throw Trash Responsibly", link: "https://c1ba.github.io/throw_trash_responsibly/"},
+{text: "Color Scroller(Hex Code Based)(PC browser)", link: "https://friendly-wescoff-c440fd.netlify.app/"},
+{text: "Books To Read List", link: "https://c1ba.github.io/my_to_read/"},
+{text: "APEDYO (Computer Science Certificate)", link: "https://ciba.itch.io/apedyo"},
+{text: "What Philosphy Suits You Most Quiz", link: "https://c1ba.github.io/quizhub_philosophy/"}]
 
 export default class Projects extends Component {
   render() {
     return (
-        <div style={box} className="projects text_box">
+        <div 
+        style={{...defaultSideBarStyling, display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',}} 
+        className="projects text_box">
         <div className="content">
-        <h2 style={linkText} className="link" onClick={()=>window.open("https://c1ba.github.io/throw_trash_responsibly/", "_blank")}>Throw Trash Responsibly</h2>
-       <h2 style={linkText} className="link" onClick={()=>window.open("https://friendly-wescoff-c440fd.netlify.app/", "_blank")}>Color Scroller(Hex Code Based)(PC browser)</h2>
-       <h2 style={linkText} className="link" onClick={()=>window.open("https://c1ba.github.io/my_to_read/", "_blank")}>To Do List - Books Edition</h2>
-       <h2 style={linkText} className="link" onClick={()=>window.open("https://www.maskohomedesign.com", "_blank")}>Masko Home Design(Business Cancelled)</h2>
-       <h2 style={linkText} className="link" onClick={()=>window.open("https://ciba.itch.io/apedyo", "_blank")}>APEDYO</h2>
-       <h2 style={linkText} className="link" onClick={()=>window.open("https://c1ba.github.io/quizhub_philosophy/", "_blank")}>What Philosphy Suits You Most Quiz (WIP)</h2>
+          {links.map((l, index) => <LinkText key={`link_${index}`} style={{marginRight: '10px',
+          marginLeft: '10px',}} textContent={l.text} link={l.link} />)}
         </div>
       </div>
     )
   }
-}
-
-const linkText={
-    textAlign: 'center',
-    fontSize: '2vw',
-    textDecoration: 'none',
-    cursor: 'pointer',
-    marginRight: '10px',
-    marginLeft: '10px',
-}
-
-const box={
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '500px',
-    height: '100%',
-    marginTop: '-18px',
-    zIndex: '2',
-    position: 'absolute',
-    backgroundColor: '#161c32',
-    animation: 'trans 1s forwards'
 }

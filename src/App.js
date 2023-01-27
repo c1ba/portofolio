@@ -13,6 +13,11 @@ import githubIcon from "./img/github_icon.png";
 import codewarsIcon from "./img/codewars_icon.png";
 import linkedInIcon from "./img/linkedin_icon.png";
 import "./bg.js";
+import { Icon } from "./components/Icon";
+
+const forwardIcons = [{imageSource: codewarsIcon, link: "https://www.codewars.com/users/Ciba"},
+{imageSource: githubIcon, link: "https://github.com/c1ba"},
+{imageSource: linkedInIcon, link: "https://www.linkedin.com/in/costache-i-b-alexandra/"}]
 
 export default function BasicExample() {
   return (
@@ -37,9 +42,7 @@ export default function BasicExample() {
         <div style={contactCol}>
             <h2 style={{textAlign: 'center'}}>E-mail: costachealexandra28@gmail.com</h2>
             <div style={contactRow}>
-              <img onClick={()=>window.open("https://www.codewars.com/users/Ciba", "_blank")} src={codewarsIcon} style={{width: '40px'},{height: '40px'}}></img>
-              <img onClick={()=>window.open("https://github.com/c1ba", "_blank")} src={githubIcon} style={{width: '40px'},{height: '40px'}}></img>
-              <img onClick={()=>window.open("https://www.linkedin.com/in/costache-i-b-alexandra/", "_blank")} src={linkedInIcon} style={{width: '40px'},{height: '40px'}}></img>
+              {forwardIcons.map((iconData, index) => <Icon altText={`icon_${index}`} key={`icon_${index}`} imageSource={iconData.imageSource} link={iconData.link} />)}
             </div>
         </div>
 

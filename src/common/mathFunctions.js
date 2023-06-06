@@ -1,0 +1,1 @@
+export const calculateRandom = (min, max) => Math.random() * (max - min) + min;

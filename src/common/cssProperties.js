@@ -7,3 +7,9 @@ export const defaultSideBarStyling = {
     zIndex: '2',
     animation: 'trans 1s forwards'
 }
+
+export const desktopButtonDefaultProperties = {
+    position: 'absolute',
+    textDecoration: 'none',
+    animation: 'trans 1s forwards'
+};
